@@ -1,0 +1,516 @@
+@font-face {
+    font-family: "montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+@font-face {
+    font-family: "montserrat bold";
+    src: url(../fonts/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: "roboto";
+    src: url(../fonts/RobotoCondensed-Regular.ttf);
+}
+
+@font-face {
+    font-family: "poiret";
+    src: url(../fonts/PoiretOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: "questrial";
+    src: url(../fonts/Questrial-Regular.ttf);
+}
+
+:root {
+    --imagem-hero: url(../img/hero_escuro.jpg);
+    --cor-hover-link: #89c4f4;
+}
+
+body {
+    margin: 0px;
+    font-family: "poiret";
+}
+
+.menu {
+    background-color: black;
+    padding: 20px;
+    font-family: "montserrat bold";
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+    color: var(--cor-hover-link);
+}
+
+.menu #titulo {
+    font-size: 130%;
+    font-weight: bold;
+}
+
+.menuDesktop {
+    list-style-type: none;
+    display: inline;
+}
+
+.menuDesktop li,
+.menuResponsivo li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menuResponsivo {
+    display: none;
+    list-style-type: none;
+}
+
+.menuResponsivo img {
+    width: 30px;
+    vertical-align: middle;
+}
+
+.hero {
+    background-image: var(--imagem-hero);
+    background-color: #cccccc;
+    height: 500px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.hero .texto {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    border: 5px solid white;
+    padding: 10px 20px;
+}
+
+.hero .texto h1 {
+    font-size: 700%;
+    font-family: "montserrat";
+}
+
+.hero .texto p {
+    font-size: 200%;
+}
+
+.propaganda {
+    display: table;
+    padding: 20px;
+    opacity: 0.1;
+    transition: 1s;
+    background-color: #f5f5f5;
+    margin: 5px;
+    margin-bottom: 10px;
+}
+
+.propaganda:hover {
+    opacity: 1;
+}
+
+.propaganda .imagem,
+.propaganda .texto {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.propaganda .imagem {
+    text-align: center;
+    padding: 10px;
+}
+
+.propaganda .texto {
+    text-align: right;
+    font-size: 200%;
+    padding-right: 50px;
+}
+
+.propaganda .imagem img {
+    width: 70%;
+}
+
+#sobMedida {
+    position: relative;
+    left: -1000px;
+    animation: deslizagemEsquerda 1s;
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+}
+
+.propaganda:hover #sobMedida {
+    animation: deslizagemDireita 1s;
+    left: 0px;
+    opacity: 1;
+}
+
+#engrenagem1 {
+    width: 40%;
+    animation: rotacao1 30s infinite linear;
+}
+
+#engrenagem2 {
+    width: 30%;
+    vertical-align: -30px;
+    animation: rotacao2 24s infinite linear;
+}
+
+.propaganda:hover #engrenagem1 {
+    animation: rotacao1 10s infinite linear;
+}
+
+.propaganda:hover #engrenagem2 {
+    animation: rotacao2 6s infinite linear;
+}
+
+#html5,
+#css3,
+#javascript {
+    position: relative;
+    width: 30%;
+    left: -1000px;
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+}
+
+#html5 {
+    animation: deslizagemEsquerda 1s;
+}
+
+#css3 {
+    animation: deslizagemEsquerda 1.5s;
+}
+
+#javascript {
+    animation: deslizagemEsquerda 2s;
+}
+
+.propaganda:hover #html5,
+.propaganda:hover #css3,
+.propaganda:hover #javascript {
+    opacity: 1;
+    left: 0px;
+}
+
+.propaganda:hover #html5 {
+    animation: deslizagemParaBaixo 1s;
+}
+
+.propaganda:hover #css3 {
+    animation: deslizagemParaBaixo 1.5s;
+}
+
+.propaganda:hover #javascript {
+    animation: deslizagemParaBaixo 2s;
+}
+
+.propaganda .painelTime {
+    display: table;
+}
+
+.propaganda .membro {
+    width: 20%;
+    display: table-cell;
+    text-align: center;
+    padding: 20px;
+    opacity: 0;
+    animation: desaparecer 1s;
+    opacity: 0;
+    transition: opacity 1s, transform 1s;
+}
+
+.propaganda .membro img {
+    width: 80%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.propaganda:hover .membro {
+    animation: aparecer 3s forwards;
+}
+
+.propaganda:hover #ceo {
+    animation-delay: 0s;
+}
+
+.propaganda:hover #diretorArte {
+    animation-delay: 1s;
+}
+
+.propaganda:hover #dev {
+    animation-delay: 2s;
+}
+
+.propaganda .membro p {
+    font-family: "montserrat";
+    margin: 0px;
+    font-size: 120%;
+}
+
+.propaganda #tituloTime {
+    display: block;
+    text-align: center;
+    font-size: 250%;
+    padding: 20px;
+}
+
+.rodape {
+    width: 100%;
+    display: table;
+    padding: 40px 0px 80px 0px;
+    background-color: black;
+    color: white;
+}
+
+.rodape a {
+    text-decoration: none;
+    color: white;
+}
+
+.rodape img {
+    -webkit-filter: brightness(0) invert(1);
+}
+
+.rodape .blocoInformacoes {
+    padding: 20px;
+    display: table-cell;
+    font-family: "montserrat";
+}
+
+.rodape #marca {
+    font-family: "montserrat bold";
+    font-size: 120%;
+}
+
+.rodape #marca a:hover {
+    color: var(--cor-hover-link);
+}
+
+.rodape #titulo {
+    font-family: "montserrat bold";
+    font-size: 120%;
+}
+
+.rodape #titulo img {
+    width: 24px;
+}
+
+.rodape #endereco {
+    padding-top: 10px;
+}
+
+.rodape #endereco p {
+    margin: 3px;
+}
+
+.rodape #iconeEndereco:hover {
+    -webkit-filter: brightness(1) invert(0);
+}
+
+.rodape #contato {
+    padding-top: 10px;
+}
+
+.rodape #contato img {
+    width: 24px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.rodape .blocoContato {
+    display: block;
+    margin: 10px;
+}
+
+.rodape .blocoContato:hover img {
+    -webkit-filter: brightness(1) invert(0);
+}
+
+.rodape .blocoContato:hover a {
+    color: var(--cor-hover-link);
+}
+
+@keyframes deslizagemDireita {
+    from {
+        left: -1000px;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+@keyframes deslizagemEsquerda {
+    from {
+        left: 0px;
+    }
+
+    to {
+        left: -1000px;
+    }
+}
+
+@keyframes deslizagemParaBaixo {
+    from {
+        top: -1000px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
+
+@keyframes rotacao1 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotacao2 {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes desaparecer {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .menu,
+    .hero,
+    .propaganda,
+    .painelTime,
+    .membro,
+    .rodape {
+        display: block;
+    }
+
+    .menu #titulo {
+        font-size: 100%;
+    }
+
+    .menu li {
+        font-size: 70%;
+        margin-right: 20px;
+    }
+
+    .menuDesktop {
+        display: none;
+    }
+
+    .menuResponsivo {
+        display: inline;
+    }
+
+    .menuResponsivo li {
+        float: right;
+    }
+
+    .hero .texto {
+        padding: 0px 2px;
+        border: 2px solid white;
+    }
+
+    .hero .texto h1 {
+        font-size: 250%;
+        font-family: "montserrat";
+    }
+
+    .hero .texto p {
+        font-size: 130%;
+    }
+
+    .hero {
+        height: 200px;
+    }
+
+    .propaganda .imagem,
+    .propaganda .texto {
+        display: block !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+
+    .propaganda {
+        opacity: 1;
+    }
+
+    .propaganda #sobMedida,
+    .propaganda #html5,
+    .propaganda #css3,
+    .propaganda #javascript,
+    .propaganda #ceo,
+    .propaganda #diretorArte,
+    .propaganda #dev {
+        opacity: 1;
+        animation: none !important;
+        left: 0px;
+    }
+
+    .propaganda #html5,
+    .propaganda #css3,
+    .propaganda #javascript {
+        top: 0px;
+    }
+
+    .propaganda .membro {
+        display: block !important;
+        width: 100% !important;
+        margin-right: 0px;
+        padding: 0px;
+        margin-bottom: 40px;
+    }
+
+    .propaganda .membro img {
+        width: 50%;
+    }
+
+    .blocoInformacoes {
+        display: block !important;
+        width: 100% !important;
+        text-align: center;
+        padding: 0px !important;
+    }
+
+    .rodape #iconeEndereco,
+    .rodape .blocoContato img {
+        -webkit-filter: none;
+    }
+}

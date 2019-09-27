@@ -1,0 +1,20 @@
+#frase1 {
+    font-size: 12em;
+    color: red;
+    display: block;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#frase2 {
+    font-size: 12px;
+    color: green;
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+#frase3 {
+    font-size: 20px;
+    color: blue;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+}

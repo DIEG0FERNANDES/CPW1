@@ -1,0 +1,31 @@
+#ex1 {
+    text-align: center;
+    background-color: blue;
+    color: white;
+    padding: 30px;
+    margin: 10px 50px 0px 50px;
+}
+
+#ex2 {
+    text-align: center;
+    background-color: red;
+    color: white;
+    padding: 50px 0px 20px 0px;
+    margin-top: 10px;
+}
+
+#ex3 {
+    color: white;
+    background-color: orange;
+    margin: 10px 70px 0px 70px;
+    padding: 30px;
+    text-align: center;
+}
+
+#ex4 {
+    margin: auto;
+    width: 60%;
+    /* largura relativa */
+    height: 50px;
+    background-color: black;
+}

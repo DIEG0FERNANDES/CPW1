@@ -1,0 +1,177 @@
+@font-face {
+    font-family: "Dancing Script";
+    src: url(../fonts/DancingScript-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../fonts/Montserrat-Regular.ttf);
+}
+
+.banner {
+    font-family: "Dancing Script";
+    text-align: center;
+    background-color: #bf55ec;
+    color: white;
+    font-size: 180%;
+    padding: 30px 0px 20px 0px;
+    text-shadow: 3px 3px 0px #803a9d;
+    margin-bottom: 10px;
+}
+
+.conteiner {
+    display: table;
+    margin-bottom: 10px;
+}
+
+.menu,
+.conteudo {
+    display: table-cell;
+}
+
+.menu {
+    font-family: "Dancing Script";
+    font-size: 170%;
+    background-color: #bf55ec;
+    color: white;
+    text-shadow: 3px 3px #803a9d;
+    padding: 20px 50px 20px 20px;
+    vertical-align: top;
+}
+
+.menu ul {
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+.menu span {
+    font-size: 130%;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu a:hover {
+    color: #dea8f6;
+}
+
+.conteudo {
+    font-family: "Montserrat";
+    padding: 0px 10px 0px 10px;
+}
+
+.esquerda,
+.direita {
+    display: table;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px black;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.imagem,
+.descricao {
+    display: table-cell;
+    width: 50%;
+    vertical-align: middle;
+}
+
+.direita {
+    direction: rtl;
+}
+
+.imagem img {
+    width: 100%;
+    box-shadow: 5px 5px 10px #777777;
+    -webkit-filter: grayscale(100%);
+    transition: -webkit-filter 0.7s;
+}
+
+.esquerda .imagem {
+    padding-right: 5px;
+}
+
+.esquerda .descricao {
+    padding-left: 5px;
+}
+
+.direita .imagem {
+    padding-left: 5px;
+}
+
+.direita .descricao {
+    padding-right: 5px;
+}
+
+.direita:hover img,
+.esquerda:hover img {
+    -webkit-filter: grayscale(0%);
+}
+
+.rodape {
+    background-color: #bf55ec;
+    color: white;
+    font-family: "Dancing Script";
+    padding: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .banner {
+        padding: 5px;
+        font-size: 120%;
+        margin-bottom: 0px;
+    }
+
+    .conteiner,
+    .menu,
+    .conteudo {
+        display: block;
+    }
+
+    .menu {
+        padding: 1px;
+        text-align: center;
+        font-size: 130%;
+        margin-bottom: 10px;
+    }
+
+    .menu span {
+        display: none;
+    }
+
+    .menu li {
+        display: inline;
+        padding: 0px 10px;
+    }
+
+    .conteudo {
+        padding: 0px;
+    }
+
+    .esquerda,
+    .direita,
+    .imagem,
+    .descricao {
+        display: block;
+    }
+
+    .imagem,
+    .descricao {
+        width: 100%;
+    }
+
+    .esquerda,
+    .direita {
+        padding: 10px;
+    }
+
+    .imagem {
+        margin-bottom: 15px;
+    }
+
+    .descricao {
+        text-align: center;
+    }
+}

@@ -1,0 +1,19 @@
+.bordaTipo1 {
+    text-align: center;
+    border-style: solid;
+    border-color: red;
+    border-width: 8px;
+}
+
+.bordaTipo2 {
+    text-align: center;
+    border-style: groove;
+    border-color: blue;
+    border-radius: 15px;
+    border-width: 30px;
+}
+
+.bordaTipo3 {
+    text-align: center;
+    border: 10px solid green;
+}

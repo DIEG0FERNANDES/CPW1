@@ -1,0 +1,70 @@
+:root {
+    /* Variável para guardar a cor do banner */
+    --cor-banner: #66cc99;
+    --fonte-principal: Arial, Helvetica, sans-serif;
+    --espacamento-banner: 50px 0px 20px 0px;
+    --borda-tabela-moderna: 1px solid #777;
+    --espacamento-texto: 10px;
+}
+
+#banner {
+    font-family: var(--fonte-principal);
+    padding: var(--espacamento-banner);
+    background-color: var(--cor-banner);
+    text-align: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#tabelaAnos90 * {
+    border: 1px solid black;
+}
+
+#tabelaAnos90 thead {
+    background-color: #ccc;
+}
+
+#tabelaModerna {
+    margin: 20px auto auto auto;
+    border-top: var(--borda-tabela-moderna);
+    border-bottom: var(--borda-tabela-moderna);
+    width: 70%;
+    border-collapse: collapse;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #333;
+}
+
+#tabelaModerna th {
+    border-bottom: var(--borda-tabela-moderna);
+    background-color: #c5eff7;
+}
+
+/* #tabelaModerna th:nth-child(1) */
+#tabelaModerna th:first-child {
+    text-align: left;
+    padding-left: var(--espacamento-texto);
+}
+
+/* #tabelaModerna th:nth-child(3) */
+#tabelaModerna th:last-child {
+    text-align: right;
+    padding-right: var(--espacamento-texto);
+}
+
+#tabelaModerna td {
+    text-align: center;
+}
+
+#tabelaModerna td:first-child {
+    text-align: left;
+    padding-left: var(--espacamento-texto);
+}
+
+#tabelaModerna td:last-child {
+    text-align: right;
+    padding-right: var(--espacamento-texto);
+}
+
+#tabelaModerna tbody tr:nth-child(even) {
+    background-color: #e4f1fe;
+}
